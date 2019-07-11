@@ -14,6 +14,21 @@
     /* Nav */
     .nav {
         display: none;
+        width: 100%;
+        background-color: #31344e;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        text-align: right;
+    }
+
+    .nav.show{
+        display: flex;
+    }
+
+    .nav__link{
+        padding: 10px 15px;
     }
 
     /* Burger */

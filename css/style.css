@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
-    color: #6c7279;    
+    color: #6c7279;
     background-color: #fff;
     -webkit-font-smoothing: antialiased;
 }
@@ -53,6 +53,17 @@ p {
     align-items: center;
     padding: 35px 0;
     border-bottom: 1px solid #515369;
+}
+
+.header.fixed {
+    height: auto;
+    position: fixed;
+    background: #31344e;
+}
+
+.header.fixed .header__inner {
+    padding: 15px 0 15px 0;
+    border-bottom: 0;
 }
 
 /* Nav
@@ -353,6 +364,15 @@ p {
     background-color: #53354a;
 }
 
+.reviews__slider {
+    height: 500px;
+    overflow: hidden;
+}
+
+.reviews__slider.slick-initialized {
+    height: auto;
+}
+
 .reviews__item {
     display: flex;
     flex-wrap: wrap;
@@ -394,6 +414,48 @@ p {
     font-weight: 700;
     text-transform: uppercase;
     color: #fff;
+}
+
+.slick-dots {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    padding: 0 0 20px;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    list-style-type: none;
+}
+
+.slick-dots li {
+    margin-right: 10px;
+}
+
+.slick-dots li:last-child {
+    margin-right: 0;
+}
+
+
+.slick-dots button {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    border: 0;
+    font-size: 0;
+    color: transparent;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    opacity: .5;
+}
+
+.slick-dots button:focus {
+    outline: 0;
+}
+
+.slick-dots .slick-active button {
+    opacity: 1;
 }
 
 /* Download
